@@ -29,7 +29,7 @@ body {
             rgba(241, 245, 249, 0.96),
             rgba(241, 245, 249, 0.96)
         ),
-        url("img/logo-ceta-transparente.png");
+        url("../img/logo-ceta-transparente.png");
 
     background-repeat:
         no-repeat;
@@ -431,6 +431,12 @@ footer strong {
         600px
 ) {
 
+    body {
+        background-size:
+            320px;
+    }
+
+
     .portal-container {
         padding:
             15px;
@@ -458,6 +464,12 @@ footer strong {
     }
 
 
+    .descripcion {
+        font-size:
+            14px;
+    }
+
+
     .tarjeta {
         padding:
             22px 18px;
@@ -467,6 +479,18 @@ footer strong {
     .tarjeta h2 {
         font-size:
             21px;
+    }
+
+
+    .tarjeta p {
+        font-size:
+            14px;
+    }
+
+
+    .btn-ingresar {
+        max-width:
+            100%;
     }
 
 }
