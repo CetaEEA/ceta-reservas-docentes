@@ -1,0 +1,472 @@
+/* =========================================================
+   CONFIGURACIÓN GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #1f2937;
+
+    background:
+        linear-gradient(
+            rgba(241, 245, 249, 0.96),
+            rgba(241, 245, 249, 0.96)
+        ),
+        url("img/logo-ceta-transparente.png");
+
+    background-repeat:
+        no-repeat;
+
+    background-position:
+        center;
+
+    background-size:
+        520px;
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.portal-container {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin:
+        0 auto;
+
+    padding:
+        30px 20px 40px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    width: 100%;
+
+    padding:
+        40px 25px;
+
+    margin-bottom:
+        30px;
+
+    text-align:
+        center;
+
+    border-radius:
+        18px;
+
+    background:
+        #1f2937;
+
+    color:
+        white;
+
+    box-shadow:
+        0 10px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+}
+
+
+.logo-ceta {
+    width:
+        110px;
+
+    height:
+        110px;
+
+    object-fit:
+        contain;
+
+    margin-bottom:
+        15px;
+}
+
+
+.instituto {
+    margin-bottom:
+        8px;
+
+    font-size:
+        13px;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        3px;
+
+    opacity:
+        0.8;
+}
+
+
+.hero h1 {
+    margin-bottom:
+        12px;
+
+    font-size:
+        34px;
+}
+
+
+.descripcion {
+    max-width:
+        650px;
+
+    margin:
+        0 auto;
+
+    line-height:
+        1.6;
+
+    color:
+        #d1d5db;
+}
+
+
+/* =========================================================
+   OPCIONES
+========================================================= */
+
+.opciones {
+    width: 100%;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr;
+
+    gap:
+        22px;
+}
+
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.tarjeta {
+    width:
+        100%;
+
+    padding:
+        28px;
+
+    border-radius:
+        16px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        #e5e7eb;
+
+    box-shadow:
+        0 6px 20px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    text-align:
+        center;
+
+    transition:
+        transform
+        0.2s ease,
+        box-shadow
+        0.2s ease;
+}
+
+
+.tarjeta:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+}
+
+
+.icono {
+    width:
+        72px;
+
+    height:
+        72px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    margin-bottom:
+        16px;
+
+    border-radius:
+        50%;
+
+    background:
+        #f1f5f9;
+
+    font-size:
+        34px;
+}
+
+
+.tarjeta h2 {
+    margin-bottom:
+        12px;
+
+    color:
+        #111827;
+
+    font-size:
+        24px;
+}
+
+
+.tarjeta p {
+    margin-bottom:
+        24px;
+
+    color:
+        #6b7280;
+
+    line-height:
+        1.6;
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.btn-ingresar {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        100%;
+
+    max-width:
+        280px;
+
+    padding:
+        13px 20px;
+
+    border-radius:
+        10px;
+
+    background:
+        #1f2937;
+
+    color:
+        white;
+
+    font-weight:
+        bold;
+
+    text-decoration:
+        none;
+
+    transition:
+        opacity
+        0.2s ease,
+        transform
+        0.2s ease;
+}
+
+
+.btn-ingresar:hover {
+    opacity:
+        0.9;
+
+    transform:
+        translateY(-1px);
+}
+
+
+.btn-secundario {
+    background:
+        #9ca3af;
+
+    cursor:
+        default;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    width:
+        100%;
+
+    margin-top:
+        35px;
+
+    padding-top:
+        25px;
+
+    text-align:
+        center;
+
+    color:
+        #6b7280;
+
+    font-size:
+        14px;
+}
+
+
+footer strong {
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        #1f2937;
+}
+
+
+/* =========================================================
+   TABLET / ESCRITORIO
+========================================================= */
+
+@media (
+    min-width:
+        750px
+) {
+
+    .opciones {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+    }
+
+
+    .tarjeta {
+        min-height:
+            360px;
+
+        justify-content:
+            space-between;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (
+    max-width:
+        600px
+) {
+
+    .portal-container {
+        padding:
+            15px;
+    }
+
+
+    .hero {
+        padding:
+            30px 18px;
+    }
+
+
+    .logo-ceta {
+        width:
+            85px;
+
+        height:
+            85px;
+    }
+
+
+    .hero h1 {
+        font-size:
+            28px;
+    }
+
+
+    .tarjeta {
+        padding:
+            22px 18px;
+    }
+
+
+    .tarjeta h2 {
+        font-size:
+            21px;
+    }
+
+}
