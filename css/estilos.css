@@ -23,12 +23,16 @@ body {
         sans-serif;
 
     color:
-        #f1f5f9;
+        #1f2937;
 
+    /*
+       Fondo blanco con el logo CETA
+       como marca de agua.
+    */
     background:
         linear-gradient(
-            rgba(8, 13, 20, 0.94),
-            rgba(8, 13, 20, 0.97)
+            rgba(255, 255, 255, 0.88),
+            rgba(255, 255, 255, 0.88)
         ),
         url("../img/logo-ceta-transparente.png");
 
@@ -101,7 +105,7 @@ body {
             0,
             0,
             0,
-            0.35
+            0.25
         );
 }
 
@@ -139,7 +143,7 @@ body {
             0,
             0,
             0,
-            0.35
+            0.30
         );
 }
 
@@ -239,7 +243,7 @@ body {
             0,
             0,
             0,
-            0.28
+            0.20
         );
 
     display:
@@ -281,7 +285,7 @@ body {
             0,
             0,
             0,
-            0.45
+            0.30
         );
 }
 
@@ -413,7 +417,7 @@ body {
             0,
             0,
             0,
-            0.25
+            0.20
         );
 
     transition:
@@ -429,7 +433,7 @@ body {
 
 
 /* =========================================================
-   BOTÓN INGRESAR HOVER
+   BOTÓN INGRESAR - HOVER
 ========================================================= */
 
 .btn-ingresar:hover {
@@ -448,7 +452,7 @@ body {
             0,
             0,
             0,
-            0.35
+            0.30
         );
 }
 
@@ -512,14 +516,14 @@ footer {
         center;
 
     color:
-        #94a3b8;
+        #64748b;
 
     font-size:
         14px;
 
     border-top:
         1px solid
-        #263548;
+        #d1d5db;
 }
 
 
@@ -531,7 +535,7 @@ footer strong {
         4px;
 
     color:
-        #cbd5e1;
+        #1f2937;
 }
 
 
